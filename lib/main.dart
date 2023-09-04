@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:last/screens/Homepage.dart';
 import 'package:last/screens/login.dart';
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
   
-      home: splash(),
+      home: login(),
     );
   }
 }

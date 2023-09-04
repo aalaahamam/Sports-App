@@ -1,18 +1,18 @@
 List<Map<String, dynamic>> HomePageList = [
   {
     'name': 'Football',
-    'image': 'images/foot.PNG',
+    'image': 'assets/images/football.png',
   },
   {
     'name': 'BasketBall',
-    'image': 'images/foot.PNG',
+    'image': 'assets/images/basketball.png',
   },
   {
     'name': 'Cricket',
-    'image': 'images/foot.PNG',
+    'image': 'assets/images/cricket.png',
   },
   {
     'name': 'Tennis',
-    'image': 'images/foot.PNG',
+    'image': 'assets/images/tennis.png',
   }
 ];

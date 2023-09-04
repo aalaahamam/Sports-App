@@ -1,11 +1,8 @@
 import 'dart:math';
 import 'dart:ui';
-
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:last/componant/myText.dart';
 import 'package:last/componant/squareTile.dart';
 import 'package:last/screens/Homepage.dart';
@@ -15,24 +12,7 @@ class login extends StatelessWidget {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
 
-  Future<UserCredential> signInWithGoogle() async {
-    // Trigger the authentication flow
-    final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
-
-    // Obtain the auth details from the request
-    final GoogleSignInAuthentication? googleAuth =
-        await googleUser?.authentication;
-
-    // Create a new credential
-    final credential = GoogleAuthProvider.credential(
-      accessToken: googleAuth?.accessToken,
-      idToken: googleAuth?.idToken,
-    );
-
-    // Once signed in, return the UserCredential
-    return await FirebaseAuth.instance.signInWithCredential(credential);
-  }
-
+  
   double _sigmaX = 5; // from 0-10
   double _sigmaY = 5; // from 0-10
   double _opacity = 0.2;
@@ -43,13 +23,12 @@ class login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey[300],
         body: SingleChildScrollView(
             child: Container(
                 height: MediaQuery.of(context).size.height,
                 child: Stack(alignment: Alignment.center, children: [
                   Image.asset(
-                    '',
+                    'assets/images/mosalah.jpg',
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height,
                     fit: BoxFit.cover,
@@ -68,7 +47,7 @@ class login extends StatelessWidget {
                             height: MediaQuery.of(context).size.height * 0.18),
                         const Text("Login ",
                             style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontSize: 40,
                                 fontWeight: FontWeight.bold)),
                         SizedBox(
@@ -88,29 +67,31 @@ class login extends StatelessWidget {
                                     width:
                                         MediaQuery.of(context).size.width * 1,
                                     height: MediaQuery.of(context).size.height *
-                                        0.60,
+                                        0.63,
                                     child: Form(
                                       key: _formKey,
                                       child: Center(
+                                        
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           children: [
+                                            
                                             // username textfield
                                             MyTextField(
                                               controller: usernameController,
-                                              hintText: 'Email',
+                                              hintText: 'your phone',
                                               obscureText: false,
                                             ),
                                             SizedBox(
                                               height: 10,
                                             ),
-                                            MyTextField(
-                                              controller: usernameController,
-                                              hintText: 'password',
-                                              obscureText: false,
-                                            ),
+                                            // MyTextField(
+                                            //   controller: usernameController,
+                                            //   hintText: 'password',
+                                            //   obscureText: false,
+                                            // ),
 
                                             const SizedBox(height: 10),
 
@@ -292,6 +273,7 @@ class login extends StatelessWidget {
                                                 "Login with Google",
                                                 
                                               ),
+                                              
                                                style: ElevatedButton
                                                               .styleFrom(
                                                                   shape:
