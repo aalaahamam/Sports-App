@@ -12,7 +12,6 @@ class login extends StatelessWidget {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
 
-  
   double _sigmaX = 5; // from 0-10
   double _sigmaY = 5; // from 0-10
   double _opacity = 0.2;
@@ -71,13 +70,11 @@ class login extends StatelessWidget {
                                     child: Form(
                                       key: _formKey,
                                       child: Center(
-                                        
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           children: [
-                                            
                                             // username textfield
                                             MyTextField(
                                               controller: usernameController,
@@ -87,11 +84,6 @@ class login extends StatelessWidget {
                                             SizedBox(
                                               height: 10,
                                             ),
-                                            // MyTextField(
-                                            //   controller: usernameController,
-                                            //   hintText: 'password',
-                                            //   obscureText: false,
-                                            // ),
 
                                             const SizedBox(height: 10),
 
@@ -267,59 +259,21 @@ class login extends StatelessWidget {
                                             ),
 
                                             ElevatedButton(
-                                              onPressed: () {},
-                                              child: Text(
-                                                // imagePath: 'assets/images/google.png',
-                                                "Login with Google",
-                                                
-                                              ),
-                                              
-                                               style: ElevatedButton
-                                                              .styleFrom(
-                                                                  shape:
-                                                                      RoundedRectangleBorder(
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            15), // Adjust the radius as needed
-                                                                  ),
-                                                                  backgroundColor:
-                                                                      Colors
-                                                                          .purple,
-                                                                  elevation: 15,)
-                                            ),
-
-                                            // google + apple sign in buttons
-                                            // Padding(
-                                            //   padding: const EdgeInsets.all(8.0),
-                                            //   child: Column(
-                                            //     mainAxisSize: MainAxisSize.min,
-                                            //     mainAxisAlignment: MainAxisAlignment.center,
-                                            //     children: [
-                                            //       // facebook button
-                                            //       // SquareTile(
-                                            //       //     imagePath:
-                                            //       //         'assets/images/facebook.png',
-                                            //       //     title: "Continue with Facebook"),
-                                            //       // SizedBox(height: 10),
-
-                                            //       // google button
-
-                                            //       ElevatedButton(
-                                            //         onPressed: () {
-                                            //           signInWithGoogle();
-                                            //         },
-                                            //         child: Text(
-                                            //           // imagePath: 'assets/images/google.png',
-                                            //           "Login with Google",
-                                            //         ),
-                                            //       ),
-
-                                            // SizedBox(height: 10),
-
-                                            // apple button
-                                            // SquareTile(
-                                            //     imagePath: 'assets/images/apple.png',
-                                            //     title: "Continue with Apple"),
+                                                onPressed: () {},
+                                                child: Text(
+                                                  // imagePath: 'assets/images/google.png',
+                                                  "Login with Google",
+                                                ),
+                                                style: ElevatedButton.styleFrom(
+                                                  shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            15), // Adjust the radius as needed
+                                                  ),
+                                                  backgroundColor:
+                                                      Colors.purple,
+                                                  elevation: 15,
+                                                )),
                                           ],
                                         ),
                                       ),
