@@ -123,7 +123,7 @@ class _onBoardingState extends State<onBoarding> {
                                     fontSize: 25,
                                     fontWeight: FontWeight.w500,
                                     fontFamily: "SofiaPro",
-                                    color: Colors.yellow),
+                                    color: Colors.purple),
                               )),
                           Container(
                               child: Text(
@@ -131,6 +131,7 @@ class _onBoardingState extends State<onBoarding> {
                             style: TextStyle(
                               fontFamily: "SofiaPro",
                               fontSize: 18,
+                              
                             ),
                           )),
                         ]));
