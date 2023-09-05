@@ -97,13 +97,13 @@ class _onBoardingState extends State<onBoarding> {
                     return Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Color.fromARGB(255, 235, 232, 232),
-                              blurRadius: 5,
-                              offset: Offset(0, 5),
-                            ),
-                          ],
+                          // boxShadow: [
+                          //   BoxShadow(
+                          //     color: Color.fromARGB(255, 235, 232, 232),
+                          //     blurRadius: 5,
+                          //     offset: Offset(0, 5),
+                          //   ),
+                          // ],
                         ),
                         margin: EdgeInsets.only(
                             top: size.height / 6,
@@ -131,7 +131,7 @@ class _onBoardingState extends State<onBoarding> {
                             style: TextStyle(
                               fontFamily: "SofiaPro",
                               fontSize: 18,
-                              
+
                             ),
                           )),
                         ]));

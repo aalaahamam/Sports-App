@@ -6,12 +6,12 @@ List<Map<String, dynamic>> OnBoardingList = [
       'description':"You can find out a lot about your favorite sport" ,
 },
 {
-      'image': 'assets/images/onboarding.png',
+      'image': 'assets/images/onboarding3.PNG',
       'title': 'Players',
       'description':"You can find out a lot about your favorite Players " ,
 },
 {
-      'image':'assets/images/onboarding3.png',
+      'image':'assets/images/onboarding.png',
 
       'title': 'Scorers',
       'description':"You can see top scorers players" ,
