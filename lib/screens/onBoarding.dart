@@ -50,7 +50,7 @@ class _onBoardingState extends State<onBoarding> {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Homepage(),
+                      builder: (context) => login(),
                     ),
                   );
                 },
@@ -131,7 +131,7 @@ class _onBoardingState extends State<onBoarding> {
                             style: TextStyle(
                               fontFamily: "SofiaPro",
                               fontSize: 18,
-
+                              
                             ),
                           )),
                         ]));
