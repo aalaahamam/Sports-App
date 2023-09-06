@@ -24,6 +24,7 @@ class _loginState extends State<login> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
@@ -32,7 +33,7 @@ class _loginState extends State<login> {
             alignment: Alignment.center,
             children: [
               Image.asset(
-                'assets/images/mosalah.jpg',
+                'assets/images/login.jpg',
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height,
                 fit: BoxFit.cover,
