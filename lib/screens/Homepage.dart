@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:last/Data/list/HomePageList.dart';
+import 'package:last/screens/login.dart';
 import 'package:last/screens/onBoarding.dart';
 
 class Homepage extends StatelessWidget {
@@ -26,15 +27,20 @@ class Homepage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 // crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // InkWell(
-                  //   onTap: () {
-                  //     Navigator.pop(context);
-                  //   },
-                  //   // child: Icon(
-                  //   //   Icons.arrow_back_ios_rounded,
-                  //   //   color: Colors.yellow,
-                  //   // ),
-                  // ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => login(),
+                              ),
+                      );
+                    },
+                    child: Icon(
+                      Icons.arrow_back_ios_rounded,
+                      color: Colors.white,
+                    ),
+                  ),
                   Row(
                     // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
