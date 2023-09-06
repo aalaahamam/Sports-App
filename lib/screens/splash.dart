@@ -43,6 +43,7 @@ class _splashState extends State<splash> with SingleTickerProviderStateMixin {
 
     _animationController.forward();
 
+    
     Future.delayed(Duration(seconds: 4), () {
       Navigator.pushReplacement(
         context,
@@ -80,6 +81,7 @@ class _splashState extends State<splash> with SingleTickerProviderStateMixin {
                 builder: (context, child) {
                   return Opacity(
                     opacity: _imageAnimation.value,
+
                     child: Transform.scale(
                       scale: _imageAnimation.value,
                       child: Image.asset(
