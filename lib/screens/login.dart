@@ -275,19 +275,6 @@ class _loginState extends State<login> {
                                 ),
                                 SizedBox(height: 20),
 
-                                ElevatedButton(
-                                  onPressed: () {},
-                                  child: Text(
-                                    "Login with Google",
-                                  ),
-                                  style: ElevatedButton.styleFrom(
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(15),
-                                    ),
-                                    backgroundColor: Colors.purple,
-                                    elevation: 15,
-                                  ),
-                                ),
                               ],
                             ),
                           ),
