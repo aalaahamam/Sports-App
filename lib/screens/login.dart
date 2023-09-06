@@ -253,9 +253,8 @@ class _loginState extends State<login> {
                                                                 child:
                                                                     Text('Ok'),
                                                                 onPressed: () {
-                                                                  Navigator.of(
-                                                                          context)
-                                                                      .pop();
+                                                                     Navigator.of(context).popUntil((route) => route.isFirst);
+
                                                                 },
                                                               ),
                                                             ],
